@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title> 37 Signals Clone: A Thinkful Student Project.</title>
+	<link type="text/css" rel="stylesheet" href="main.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+	
+	<!-- Nav -->
+		<nav>
+		<p id="today">
+			<script>
+				var today = (["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][(new Date()).getDay()]);
+				document.write("Happy " + today + ".");
+			</script>
+		</p> 
+			<ul>
+				<li><a href="#">Company blog</a></li>	
+				<li><a href="#">Our story</a></li>
+				<li><a href="#">Follow us on Twitter</a></li>
+				<li><a href="#">System status</a></li>
+				<li><a id="sign-in" href="#">Sign in</a></li>
+			</ul>
+		</nav>
+
+	<!-- Container for Logos, Headline & Products -->
+	<div class="container">
+		
+		<!-- 37 Signals Logo -->
+		<img src="http://37signals.com/images/logo-37s-large.png" alt="logo-37s-large" width="164" height="39" id="logo37l">
+		
+		
+		<!-- Product headlines,Taline and arrow icons -->
+		<div class="headline og">
+			
+			<div id="perm"class="banner">
+				<h1>
+					Making collaboration productive and enjoyable for people every day.
+				</h1>
+
+				<p>
+					Frustration-free web-based apps for collaboration, sharing information, and making decisions.
+				</p>
+			</div>
+
+			<div id="bctext" class="banner hidden">
+				<h2><span>Basecamp</span> is the project management tool you wish you had on your last project.</h2>
+          		<p>Are you still managing projects with email? Are you still using Excel for your to-do lists? It&rsquo;s time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.</p>
+          		<img src="http://37signals.com/images/arrow-left.png" width="69" height="69" class="arrow arrowbc">
+			</div>
+
+			<div id="hrtext" class="banner hidden">
+ 				<h2><span>Highrise</span> remembers the important things about people you&rsquo;d normally forget.</h2>
+         		 <p>Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.</p>
+          		<img src="http://37signals.com/images/arrow-left.png" width="69" height="69" class="arrow arrowhr">
+			</div>
+
+			<div id="cftext" class="banner hidden">
+				<h2>From near or far, <span>Campfire</span> helps teams work together over the web in real-time.</h2>
+          		<p>Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It&rsquo;s game changing. We couldn&rsquo;t run our own business without Campfire.</p>
+          		<img src="http://37signals.com/images/arrow-right.png" width="69" height="69" class="arrow arrowcf">
+			</div>
+	
+		</div>
+
+		<!-- Product Container -->
+		<div class=" or">
+			
+			<!-- BaseCamp -->
+			<div id="bc" class="box">
+				<a href="#">
+				<div>
+					<img class="logo" src="http://37signals.com/images/logo-bc.png" alt="BaseCamp">
+				</div>
+				<div>
+					<h3 class="app">
+						<span class="title">Basecamp</span>
+						<sup>®</sup>
+					</h3>
+				</div>
+				<h4 class="task">Manage Projects</h4>
+				<p class="tag">Used by millions for project management.</p>
+				</a>
+			</div>
+			
+			<!-- HighRise -->
+			<div id="hr" class="box">
+				<a href="#">
+				<div>
+					<img class="logo" src="http://37signals.com/images/logo-hr.png" alt="HighRise">
+				</div>
+				<div>
+					<h3 class="app">
+						<span class="title">Highrise</span>
+						<sup>®</sup>
+					</h3>
+				</div>
+				<h4 class="task">Manage Contacts</h4>
+				<p class="tag">Know the people you do business with.</p>
+				</a>
+			</div>
+			
+			<!-- CampFire -->
+			<div id="cf" class="box">
+				<a href="#">
+				<div>
+					<img class="logo" src="http://37signals.com/images/logo-cf.png" alt="CampFire">
+				</div>
+				<div>
+					<h3 class="app">
+						<span class="title">Campfire</span>
+						<sup>™</sup>
+					</h3>
+				</div>
+				<h4 class="task">Work in Real-Time</h4>
+				<p class="tag">Group chat rooms for your business.</p>
+				</a>
+			</div>
+		</div>
+		<hr> <!-- asterisk backgound img -->
+	</div>
+	<script src="application.js"></script>
+</body>
+</html>
